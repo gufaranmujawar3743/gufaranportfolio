@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gufaran Mujawar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-code-image {
+            background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: multiply;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .gradient-text {
+            background-image: linear-gradient(to right, #6b7280, #374151); /* Text gradient */
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .shadow-glow {
+          box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3); /* Indigo glow */
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 fixed top-0 left-0 w-full z-10 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#home" class="text-xl font-semibold text-white">Gufaran Mujawar</a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-indigo-300 transition duration-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-indigo-300 transition duration-300">About</a></li>
+                    <li><a href="#experience" class="hover:text-indigo-300 transition duration-300">Experience</a></li>
+                    <li><a href="#skills" class="hover:text-indigo-300 transition duration-300">Skills</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-300 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
+                <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="hidden w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-20">
+        <div class="bg-gray-800 w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-white focus:outline-none" aria-label="Close Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#home" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Home</a></li>
+                    <li><a href="#about" class="block text-lg text-white hover:text-indigo-300 transition duration-300">About</a></li>
+                    <li><a href="#experience" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Experience</a></li>
+                    <li><a href="#skills" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Skills</a></li>
+                    <li><a href="#contact" class="block text-lg text-white hover:text-indigo-300 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="pt-20 pb-10">
+        <section id="home" class="container mx-auto px-4 text-center bg-code-image">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">Gufaran Mujawar</h1>
+            <p class="text-xl text-gray-300 mb-8 pulse">Front-End Developer</p>
+            <img src="https://media.licdn.com/dms/image/v2/C4D03AQE80wBTEISqhw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1598203739561?e=2147483647&v=beta&t=OzkP-ZJi3QLELNh5D5Hvt7GGxF8SKuZkKnsCRr1YIms" alt="Gufaran Mujawar"  class="rounded-full shadow-lg mx-auto mb-8" style="max-width: 200px; border: 5px solid #6b7280;">
+            <a href="#contact" class="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300 shadow-lg shadow-glow hover:shadow-xl">Contact Me</a>
+        </section>
+
+        <section id="about" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-semibold text-center mb-12 text-white gradient-text">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/EEE/31343C" alt="Gufaran Mujawar" class="rounded-lg shadow-lg shadow-glow">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg text-gray-300">
+                        Detail-oriented and efficient Front-End Developer with over 5 years of experience specializing in Angular frameworks (v6–v17+). Proven expertise in developing scalable web applications, integrating modern UI/UX tools, and collaborating in Agile environments. Strong understanding of modern front-end architecture, security standards, and responsive design.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-semibold text-center mb-12 text-white gradient-text">Experience</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">Senior Software Engineer</h3>
+                    <p class="text-gray-400 mb-2">Mobisoft Infotech Pvt. Ltd., Pune | Sept 2023 – Present</p>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Developed Angular-based social advertising platform (Talkfire) enabling user-generated brand promotion with reward mechanisms.</li>
+                        <li>Built secure fundraising web application (TeamFunded) for educational institutions with data privacy and sharing functionalities.</li>
+                        <li>Led front-end for Freight4U (JIOBP), supporting real-time tracking and cybersecurity insurance for logistics.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">Software Engineer</h3>
+                    <p class="text-gray-400 mb-2">Iauro Systems Pvt. Ltd., Pune | Jan 2022 – Sept 2023</p>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Created data aggregation and job scheduling platform (PanoIQ) integrating Airflow, Trino, Minio, and OpenSearch.</li>
+                        <li>Implemented user authentication with Keycloak and custom query interface (Querybook).</li>
+                        <li>Built MEAN-based Mirai platform for SBI Security (Japan) targeting cyber insurance sales.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-2">MEAN Stack Developer</h3>
+                    <p class="text-gray-400 mb-2">Mapalon Pvt. Ltd., Pune | Sept 2019 – Jan 2022</p>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Developed and maintained MyParcelGuru.com, a MEAN stack logistics aggregator with warehouse management integration.</li>
+                        <li>Handled both front-end and back-end development, ETL integration, and performance optimization.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-semibold text-center mb-12 text-white gradient-text">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-4">Technical Skills</h3>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Angular 2+, HTML5, CSS3, Bootstrap, PrimeNG, Angular Material</li>
+                        <li>TypeScript, JavaScript</li>
+                        <li>UI/UX Tools: Figma, Zeplin</li>
+                        <li>Version Control: GitHub, GitLab, Azure DevOps</li>
+                        <li>Tools: Jira, Zoho, QueryBook, Airflow, Minio, Trino, OpenSearch</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-4">Languages</h3>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>Marathi</li>
+                    </ul>
+                </div>
+                 <div class="bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-4">Education</h3>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>Bachelor of Engineering (Computer Science) - Savitribai Phule Pune University (SPPU)</li>
+                         <li>CGPA: 7.6</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-semibold text-center mb-12 text-white gradient-text">Contact Me</h2>
+            <div class="bg-gray-800 rounded-lg shadow-md p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Get in Touch</h3>
+                        <p class="text-gray-300 mb-4">
+                            Feel free to reach out to me for any inquiries or collaborations.
+                        </p>
+                        <ul class="text-gray-400">
+                            <li class="mb-2"><strong>Phone:</strong> +91 7719802733</li>
+                            <li class="mb-2"><strong>Email:</strong> gufaranmujawar@gmail.com</li>
+                            <li class="mb-2"><strong>LinkedIn:</strong> linkedin.com/in/gufaran-mujawar-b774561b0</li>
+                            <li class="mb-2"><strong>Address:</strong> Sector 12, PCMC, Pune – 411026</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Send me a Message</h3>
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <textarea placeholder="Your Message" class="w-full px-4 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300 shadow-lg shadow-glow hover:shadow-xl">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            &copy; 2024 Gufaran Mujawar. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const closeIcon = document.getElementById("close-icon");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        const navLinks = document.querySelectorAll('header nav a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle("hidden");
+            hamburgerIcon.classList.toggle("hidden");
+            closeIcon.classList.toggle("hidden");
+        }
+
+        hamburgerBtn.addEventListener("click", toggleMobileMenu);
+        closeMenuBtn.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                toggleMobileMenu(); // Close menu when a link is clicked
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+
+        function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
